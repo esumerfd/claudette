@@ -1,11 +1,11 @@
-# Claudette - Iron Man Helmet Build Guide
+# Claudette - Smart Mask Build Guide
 
-🦾 **Build a functional Iron Man-style helmet with Raspberry Pi 5**
+🤖 **Build a functional, tech-integrated wearable mask with Raspberry Pi 5**
 
 ## Quick Overview
 
-Complete documentation for building a wearable helmet with:
-- 🎭 3D printable models
+Complete documentation for building a custom wearable smart mask featuring:
+- 🎭 Custom 3D designed mask
 - 🖥️ Raspberry Pi 5 with HUD display  
 - 🎤 Voice input system
 - 🔊 Audio output
@@ -35,11 +35,12 @@ Complete documentation for building a wearable helmet with:
 
 ## Getting Started
 
-1. **Print helmet** (60-80 hours)
-2. **Assemble structure** (1 week)
-3. **Install electronics** (1 week)
-4. **Setup software** (1 week)
-5. **Test and finish** (1 week)
+1. **Design/obtain 3D mask model** (custom or reference builds)
+2. **Print mask** (60-80 hours)
+3. **Assemble structure** (1 week)
+4. **Install electronics** (1 week)
+5. **Setup software** (1 week)
+6. **Test and finish** (1 week)
 
 See [BUILD_GUIDE.md](./BUILD_GUIDE.md) for complete instructions.
 
@@ -55,10 +56,21 @@ See [BUILD_GUIDE.md](./BUILD_GUIDE.md) for complete instructions.
 - Cost: $19
 - Only if space critical
 
+## Design Resources
+
+### Reference Builds
+This project draws inspiration from existing articulated helmet/mask designs:
+- Boxandloop's articulated helmet (Thing:4629346) - excellent mechanical reference
+- Various sci-fi helmet builds on Thingiverse/Printables
+- Use these as mechanical and electronics integration references
+
+### Creating Your Own Claudette Design
+See [DESIGN_GUIDE.md](./DESIGN_GUIDE.md) for 3D modeling tool recommendations and workflows
+
 ## Quick Links
 
-- [Full Build Guide](./BUILD_GUIDE.md)
-- [3D Models](https://www.thingiverse.com/thing:4629346)
+- [**Full Build Guide**](./BUILD_GUIDE.md) - Electronics and assembly
+- [**Design Guide**](./DESIGN_GUIDE.md) - 3D modeling recommendations
 - [Community](https://reddit.com/r/raspberry_pi)
 
 ## Safety
@@ -74,6 +86,6 @@ MIT - See LICENSE file
 
 ---
 
-**Ready to build?** Check the [full guide](./BUILD_GUIDE.md)!
+**Ready to build your Claudette?** Check the [full guide](./BUILD_GUIDE.md)!
 
 *Built by the maker community* ❤️
