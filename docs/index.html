@@ -118,19 +118,28 @@
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.outputColorSpace = THREE.SRGBColorSpace;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.2;
         container.appendChild(renderer.domElement);
 
         // Lighting
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
         scene.add(ambientLight);
 
-        const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.8);
+        const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
+        scene.add(hemisphereLight);
+
+        const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1.5);
         directionalLight1.position.set(5, 5, 5);
         scene.add(directionalLight1);
 
-        const directionalLight2 = new THREE.DirectionalLight(0x667eea, 0.4);
+        const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.8);
         directionalLight2.position.set(-5, 3, -5);
         scene.add(directionalLight2);
+
+        const frontLight = new THREE.DirectionalLight(0xffffff, 0.6);
+        frontLight.position.set(0, 0, 5);
+        scene.add(frontLight);
 
         // Controls
         const controls = new OrbitControls(camera, renderer.domElement);
