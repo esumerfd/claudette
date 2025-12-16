@@ -1,1 +1,4 @@
+models/*.stl
 gen/
+
+models/*.blend
