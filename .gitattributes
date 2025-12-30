@@ -1,2 +1,4 @@
 models/meshy_ed_self_portrait.blend filter=lfs diff=lfs merge=lfs -text
 images/ed-self-portrait.jpeg filter=lfs diff=lfs merge=lfs -text
+docs/models/Meshy_AI_Distorted_Reflection_1219015136_texture.glb filter=lfs diff=lfs merge=lfs -text
+models/Meshy_AI_Distorted_Reflection_1219015121_texture.blend filter=lfs diff=lfs merge=lfs -text
