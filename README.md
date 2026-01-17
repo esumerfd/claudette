@@ -1,5 +1,7 @@
 # Claudette - Smart Mask Build Guide
 
+PROTOTYPE. NOT WORKING YET.
+
 🤖 **Build a functional, tech-integrated wearable mask with Raspberry Pi 5**
 
 ## Quick Overview
