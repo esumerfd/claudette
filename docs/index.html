@@ -25,6 +25,7 @@
         header {
             text-align: center;
             margin: 40px 0 20px;
+            position: relative;
         }
 
         h1 {
@@ -67,11 +68,46 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        #aaron-callout {
+            display: none;
+            font-size: 0.4em;
+            white-space: nowrap;
+            animation: bannerIn 0.3s ease-out;
+        }
+
+        #aaron-callout.visible {
+            display: inline;
+        }
+
+        #aaron-callout .arrow {
+            color: #ff4444;
+            -webkit-text-fill-color: #ff4444;
+            animation: bounce 0.6s ease-in-out infinite alternate;
+            display: inline-block;
+        }
+
+        #aaron-callout .message {
+            font-weight: 700;
+            color: #ff4444;
+            -webkit-text-fill-color: #ff4444;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+        }
+
+        @keyframes bannerIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            from { transform: translateX(0); }
+            to { transform: translateX(-4px); }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Claudette&trade;</h1>
+        <h1>Claudette&trade; <span id="aaron-callout"><span class="arrow">&larr;</span> <span class="message">Aaron, not yours</span></span></h1>
         <p>A smart mask powered by Raspberry Pi 5 with HUD display, voice input, and audio output</p>
     </header>
 
@@ -184,6 +220,13 @@
             renderer.render(scene, camera);
         }
         animate();
+
+        // Aaron easter egg
+        setTimeout(() => {
+            const callout = document.getElementById('aaron-callout');
+            callout.classList.add('visible');
+            setTimeout(() => callout.classList.remove('visible'), 5000);
+        }, 2000);
 
         // Handle window resize
         window.addEventListener('resize', () => {
